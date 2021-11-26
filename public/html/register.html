@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>templete</title>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/main.css">
+</head>
+<body>
+  <div class="mt-3" style="display: flex; justify-content: center;"><h1>OceanChat</h1></div>
+  <form class= "ajax" id="form" action="/chat" method="GET" id="registration-form"> 
+  <div id="chat-container">
+
+    <input type="text" name="username" id="username" placeholder="Username"></input>
+    <input type="text" name="room" id="room" placeholder="Chat Room"></input>
+
+    <button type="submit" id="send" value="valor">Conectar</button>
+
+  </div>
+  </form>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="../js/between.js"></script>
+</body>
+</html>
